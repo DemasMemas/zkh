@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.practice.zkh.Controllers.citizenController">
+   <children>
+      <Label fx:id="nameLabel" alignment="CENTER" layoutX="15.0" layoutY="14.0" prefHeight="17.0" prefWidth="371.0" text="Добро пожаловать, Имений Фамильев" textAlignment="CENTER">
+         <font>
+            <Font name="GOST type A" size="16.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="gasS" editable="true" layoutX="230.0" layoutY="53.0" />
+      <TableView fx:id="priceTable" layoutX="21.0" layoutY="233.0" prefHeight="285.0" prefWidth="359.0" stylesheets="@css/tableViewStyle.css">
+        <columns>
+          <TableColumn fx:id="offerC" prefWidth="141.0" text="Услуга" />
+          <TableColumn fx:id="countC" prefWidth="124.0" text="Затрачено" />
+            <TableColumn fx:id="summaryC" prefWidth="93.0" text="Сумма к оплате" />
+        </columns>
+      </TableView>
+      <Spinner fx:id="hWaterS" editable="true" layoutX="230.0" layoutY="89.0" />
+      <Spinner fx:id="cWaterS" editable="true" layoutX="230.0" layoutY="124.0" />
+      <Spinner fx:id="heatingS" editable="true" layoutX="230.0" layoutY="160.0" />
+      <Spinner fx:id="electricityS" editable="true" layoutX="230.0" layoutY="197.0" />
+      <Label layoutX="22.0" layoutY="56.0" text="Счётчик газа">
+         <font>
+            <Font name="GOST type A" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="92.0" text="Счётчик горячей воды">
+         <font>
+            <Font name="GOST type A" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="127.0" text="Счётчик холодной воды">
+         <font>
+            <Font name="GOST type A" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="163.0" text="Счётчик отопления">
+         <font>
+            <Font name="GOST type A" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="200.0" text="Счётчик электроэнергии">
+         <font>
+            <Font name="GOST type A" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="104.0" layoutY="582.0" mnemonicParsing="false" onAction="#save" text="Обновить значения счётчиков">
+         <font>
+            <Font name="GOST type A" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="10.0" layoutY="537.0" mnemonicParsing="false" onAction="#countAll" prefHeight="29.0" prefWidth="176.0" text="Сумма за всё время">
+         <font>
+            <Font name="GOST type A" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="209.0" layoutY="537.0" mnemonicParsing="false" onAction="#countLast" text="Сумма с последнего замера">
+         <font>
+            <Font name="GOST type A" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

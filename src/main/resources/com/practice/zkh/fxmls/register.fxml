@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="335.0" prefWidth="450.0" stylesheets="@css/comboBoxStyle.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.practice.zkh.Controllers.registerController">
+   <children>
+      <ComboBox fx:id="cityCB" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="181.0" promptText="Выберите город" />
+      <TextField fx:id="nameTF" layoutX="14.0" layoutY="152.0" prefHeight="25.0" prefWidth="181.0" promptText="ФИО">
+         <font>
+            <Font name="GOST type A" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="passwordTF" layoutX="14.0" layoutY="188.0" prefHeight="25.0" prefWidth="181.0" promptText="Пароль">
+         <font>
+            <Font name="GOST type A" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="areaTF" layoutX="14.0" layoutY="222.0" prefHeight="25.0" prefWidth="181.0" promptText="Площадь квартиры (кв.м)">
+         <font>
+            <Font name="GOST type A" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="residentsTF" layoutX="14.0" layoutY="260.0" prefHeight="25.0" prefWidth="181.0" promptText="Количество жильцов">
+         <font>
+            <Font name="GOST type A" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="gasTF" layoutX="213.0" layoutY="152.0" prefHeight="25.0" prefWidth="223.0" promptText="Показания счётчика газа (куб.м)">
+         <font>
+            <Font name="GOST type A" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cWaterTF" layoutX="213.0" layoutY="188.0" prefHeight="25.0" prefWidth="223.0" promptText="Показания счётчика х/воды (куб.м)">
+         <font>
+            <Font name="GOST type A" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="hWaterTF" layoutX="213.0" layoutY="222.0" prefHeight="25.0" prefWidth="223.0" promptText="Показания счётчика г/воды (куб.м)">
+         <font>
+            <Font name="GOST type A" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="heatingTF" layoutX="213.0" layoutY="260.0" prefHeight="25.0" prefWidth="223.0" promptText="Показания счётчика отопления (ГКал)">
+         <font>
+            <Font name="GOST type A" size="15.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="districtCB" layoutX="246.0" layoutY="14.0" prefHeight="25.0" prefWidth="181.0" promptText="Выберите район" />
+      <ComboBox fx:id="streetCB" layoutX="14.0" layoutY="49.0" prefHeight="25.0" prefWidth="181.0" promptText="Выберите улицу" />
+      <ComboBox fx:id="houseCB" layoutX="246.0" layoutY="49.0" prefHeight="25.0" prefWidth="181.0" promptText="Выберите номер дома" />
+      <TextField fx:id="flatTF" layoutX="135.0" layoutY="86.0" prefHeight="25.0" prefWidth="181.0" promptText="Номер квартиры">
+         <font>
+            <Font name="GOST type A" size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="messageLabel" layoutX="60.0" layoutY="122.0" text="Если у вас нет счётчика, пишите 0 в качестве значения" textAlignment="CENTER">
+         <font>
+            <Font name="GOST type A" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="electricityTF" layoutX="174.0" layoutY="297.0" prefHeight="25.0" prefWidth="262.0" promptText="Показания счётчика электроэнергии (кВт/ч)">
+         <font>
+            <Font name="GOST type A" size="15.0" />
+         </font>
+      </TextField>
+      <Button layoutX="14.0" layoutY="297.0" mnemonicParsing="false" onAction="#register" prefHeight="25.0" prefWidth="133.0" text="Зарегистрироваться">
+         <font>
+            <Font name="GOST type A" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
